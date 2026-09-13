@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Hameed | Intern Software Engineer</title>
+  <meta name="description"
+    content="Mohammed Hameed - Intern Software Engineer and IT undergraduate specializing in Java, MySQL, React, PHP, and desktop + web development. Based in Kurunegala, Sri Lanka." />
+  <meta name="keywords"
+    content="Mohammed Hameed, Software Engineer, Intern Software Engineer, Java, MySQL, React, PHP, Portfolio, Sri Lanka" />
+  <meta name="author" content="Mohammed Hameed" />
+  <meta name="theme-color" content="#0a0c10" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mohammed Hameed | Intern Software Engineer" />
+  <meta property="og:description"
+    content="IT undergraduate passionate about building reliable software, responsive web apps, and clean user experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Mohammed Hameed | Intern Software Engineer" />
+  <meta name="twitter:description"
+    content="Software Engineering student portfolio - Java, MySQL, React, PHP, Electron.js" />
+
+  <!-- Favicon placeholder: MH initials -->
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0c10'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='26' font-weight='700' fill='white' text-anchor='middle'%3EMH%3C/text%3E%3Crect x='14' y='48' width='36' height='3' rx='1.5' fill='%235b8cff'/%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ============ PRELOADER ============ -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-icons">
+        <span class="icon-circle">&lt;/&gt;</span>
+        <span class="icon-circle">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </span>
+        <span class="icon-circle">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        </span>
+      </div>
+      <h2 class="preloader-title">Welcome to my</h2>
+      <h1 class="preloader-subtitle">Portfolio Website</h1>
+      <p class="preloader-tagline">Creating Websites That Feel Alive.</p>
+      
+      <div class="preloader-progress-container">
+        <div class="preloader-progress-bar" id="preloader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#home">Skip to main content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="container nav-inner" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Mohammed Hameed - Home">
+        <span class="logo-mark" aria-hidden="true">MH</span>
+        <span class="logo-text">Mohammed Hameed</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <!-- Left -->
+        <div class="hero-content">
+          <p class="badge reveal">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Available for Software Engineering Opportunities
+          </p>
+
+          <h1 class="hero-title reveal">
+            Hi, I'm Mohammed Hameed.<br />
+            <span class="highlight">Software Engineer</span>
+          </h1>
+
+          <p class="hero-typing reveal" aria-live="polite">
+            <span class="typing-prefix">&gt;_</span>
+            <span id="typed-text">Intern Software Engineer</span><span class="caret" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero-desc reveal">
+            IT undergraduate passionate about building reliable software, responsive web applications, and clean user
+            experiences.
+          </p>
+
+          <div class="hero-buttons reveal">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <!-- Replace href="#" with resume.pdf -->
+            <a href="resource/Hameed_Resume.pdf" download class="btn btn-outline">Download CV</a>
+          </div>
+
+          <div class="hero-social reveal">
+            <a href="https://github.com/mhdhameed7/" class="social-btn" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.26 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/mhd-hameed-2895a2342?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              class="social-btn" aria-label="LinkedIn profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z" />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/share/1HkoFszpC9/" class="social-btn" aria-label="Facebook profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.312h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/itzprincehameed?stkn=MXhnM2x1ZjZlOWk4NQ==" class="social-btn"
+              aria-label="Instagram profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </a>
+            <span class="hero-location">Thorryaya, Kurunegala, Sri Lanka</span>
+          </div>
+        </div>
+
+        <!-- Right: Developer visual -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="hero-image-card">
+            <img src="resource/profile.png" alt="Mohammed Hameed" />
+          </div>
+
+          <div class="tech-pills">
+            <span class="pill">Java</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">React</span>
+            <span class="pill">PHP</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">About Me</p>
+          <h2 class="section-title">Software Engineering student focused on real-world quality</h2>
+          <p class="section-sub">Building a strong foundation in software development, databases, and user-centered
+            design.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm an IT undergraduate pursuing a <strong>Higher National Diploma in Software Engineering at SLIATE
+                Kurunegala</strong>.
+              My core strengths are <strong>Java and MySQL</strong>, with working knowledge of full-stack web
+              development using
+              <strong>React, PHP, C#, Python, and Electron.js</strong>.
+            </p>
+            <p>
+              I enjoy building both <strong>web and desktop applications</strong> — from student onboarding and
+              scheduling
+              systems to multi-role reporting platforms. I have hands-on experience designing user-friendly interfaces
+              with <strong>Java Swing</strong> and a solid understanding of <strong>OOP and relational
+                databases</strong>.
+            </p>
+            <p>
+              I care about writing clean, well-structured code and creating polished interfaces that are easy to use.
+              I'm currently seeking an <strong>entry-level / intern opportunity</strong> to learn from experienced
+              engineers
+              and contribute to real-world projects.
+            </p>
+            <ul class="about-points">
+              <li>Clean code, OOP &amp; database fundamentals</li>
+              <li>Responsive web UIs &amp; desktop app workflows</li>
+              <li>Fast learner, reliable team contributor</li>
+            </ul>
+          </div>
+
+          <div class="about-stats reveal">
+            <div class="stat-card">
+              <span class="stat-value">3+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">5+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value sm">Student</span>
+              <span class="stat-label">Software Engineering</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value sm">Solver</span>
+              <span class="stat-label">Problem Solver</span>
+            </div>
+            <div class="lang-card">
+              <h3>Languages</h3>
+              <div class="lang-pills">
+                <span>English</span><span>Sinhala</span><span>Tamil</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Technical Skills</p>
+          <h2 class="section-title">A practical, project-driven stack</h2>
+          <p class="section-sub">Technologies I have used in coursework and personal projects.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <h3>Programming</h3>
+            <ul>
+              <li>Java</li>
+              <li>C#</li>
+              <li>Python</li>
+              <li>PHP</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Frontend</h3>
+            <ul>
+              <li>React</li>
+              <li>JavaScript</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Backend</h3>
+            <ul>
+              <li>PHP</li>
+              <li>Java OOP</li>
+              <li>Form Handling</li>
+              <li>Role-based Logic</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Database</h3>
+            <ul>
+              <li>MySQL</li>
+              <li>SQLite</li>
+              <li>Firebase</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Desktop Development</h3>
+            <ul>
+              <li>Java Swing</li>
+              <li>Electron.js</li>
+              <li>SQLite Integration</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Three.js</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="soft-skills reveal">
+          <h3>Soft Skills</h3>
+          <div class="soft-pills">
+            <span>Teamwork</span><span>Communication</span><span>Problem-solving</span><span>Adaptability</span><span>Work
+              Ethic</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2 class="section-title">Projects that show how I build</h2>
+          <p class="section-sub">Web and desktop applications focused on usability, validation, and clean data flows.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-preview" aria-hidden="true">
+              <img src="resource/projects/project1.png" alt="DriveSL Admin UI" class="project-image" />
+              <span class="preview-label">Desktop + Web App UI</span>
+            </div>
+            <div class="project-content">
+              <p class="project-cat">Full-Stack • Desktop App</p>
+              <h3>Driving School Management System (DriveSL Admin)</h3>
+              <p>Student onboarding, NIC validation, and smart batch scheduling. Includes a web interface and desktop
+                application built with Electron.js.</p>
+              <ul class="tags">
+                <li>React</li>
+                <li>Electron.js</li>
+                <li>SQLite</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://github.com/mhdhameed7/LankaDrive-Driving-School-Management-System" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-outline btn-sm">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+            <div class="project-preview" aria-hidden="true">
+              <img src="resource/projects/projectcommunity.png" alt="Community Problem Reporting System UI"
+                class="project-image" />
+              <span class="preview-label">Multi-role Web Platform</span>
+            </div>
+            <div class="project-content">
+              <p class="project-cat">Web Platform • PHP &amp; MySQL</p>
+              <h3>Community Problem Reporting System</h3>
+              <p>Multi-role web platform for reporting community issues with dashboards, admin controls, and photo
+                uploads.</p>
+              <ul class="tags">
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <div class="project-actions">
+                <a href="#" class="btn btn-outline btn-sm">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+            <div class="project-preview" aria-hidden="true">
+              <div class="project-iframe-wrapper">
+                <iframe src="https://hameed-code.vercel.app/" title="Hamee Dev Portfolio" loading="lazy">
+                </iframe>
+              </div>
+              <span class="preview-label">Interactive Portfolio</span>
+            </div>
+            <div class="project-content">
+              <p class="project-cat">Frontend • 3D Experience</p>
+              <h3>Personal Developer Portfolio Website</h3>
+              <p>Responsive personal developer portfolio featuring a dark/neon visual style and interactive 3D
+                animations.</p>
+              <ul class="tags">
+                <li>Three.js</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://hameed-code.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary btn-sm">Live Demo</a>
+                <a href="https://github.com/mhdhameed7/persional-portfolio" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline btn-sm">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal">
+            <div class="project-preview" aria-hidden="true">
+              <div class="project-iframe-wrapper">
+                <iframe src="https://dream-frame-photography-system.vercel.app/" title="DreamFrame" loading="lazy">
+                </iframe>
+              </div>
+              <span class="preview-label">Web Application</span>
+            </div>
+            <div class="project-content">
+              <p class="project-cat">Full-Stack • Web Application</p>
+              <h3>Photography Portfolio & Booking Platform (DreamFrame)</h3>
+              <p>A modern photography website for showcasing creative work, managing service packages, and handling
+                client inquiries with a responsive and immersive user experience.</p>
+              <ul class="tags">
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>Tailwind CSS</li>
+                <li>Node.js</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://dream-frame-photography-system.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-outline btn-sm">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section section-alt">
+      <div class="container narrow">
+        <div class="section-header reveal">
+          <p class="eyebrow">Education</p>
+          <h2 class="section-title">Academic background</h2>
+          <p class="section-sub">Formal education and continuous learning.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="timeline-date">2024 – Present</span>
+              <h3>Higher National Diploma in Software Engineering</h3>
+              <p class="timeline-school">SLIATE Kurunegala</p>
+              <p class="timeline-desc">Core focus on software development, OOP, databases, and web technologies.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="timeline-date">2024</span>
+              <h3>Diploma in English</h3>
+              <p class="timeline-school">ESOFT Metro Campus, Kurunegala</p>
+              <p class="timeline-desc">Improved professional communication and technical documentation skills.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="timeline-date">2020</span>
+              <h3>G.C.E. Advanced Level – Commerce Stream</h3>
+              <p class="timeline-school">Hizbullah Central College, Kurunegala</p>
+              <p class="timeline-desc">Foundation in commerce, analytical thinking, and structured study.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Let's Build Something Together</h2>
+          <p class="section-sub">Interested in working together or have an opportunity to discuss? Feel free to get in
+            touch.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <a class="info-card" href="mailto:mhdhameedofficial@gmail.com">
+              <span class="info-icon" aria-hidden="true">✉</span>
+              <span><strong>Email</strong><small>mhdhameedofficial@gmail.com</small></span>
+            </a>
+            <a class="info-card" href="tel:0753277816">
+              <span class="info-icon" aria-hidden="true">☎</span>
+              <span><strong>Phone</strong><small>0753277816</small></span>
+            </a>
+            <div class="info-card">
+              <span class="info-icon" aria-hidden="true">◎</span>
+              <span><strong>Location</strong><small>Thorryaya, Kurunegala, Sri Lanka</small></span>
+            </div>
+            <div class="info-row">
+              <a href="https://github.com/mhdhameed7/" class="btn btn-outline btn-sm">GitHub</a>
+              <a href="https://www.linkedin.com/in/mhd-hameed-2895a2342?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                class="btn btn-outline btn-sm">LinkedIn</a>
+              <a href="https://www.facebook.com/share/1HkoFszpC9/" class="btn btn-outline btn-sm">Facebook</a>
+              <a href="https://www.instagram.com/itzprincehameed?stkn=MXhnM2x1ZjZlOWk4NQ=="
+                class="btn btn-outline btn-sm">Instagram</a>
+            </div>
+            <p class="info-note">Open to internships, entry-level roles, and collaborative projects.</p>
+          </div>
+
+          <form id="contact-form" class="contact-form reveal" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+                <small class="error" id="err-name"></small>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required
+                  autocomplete="email" />
+                <small class="error" id="err-email"></small>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Opportunity / Project inquiry" required />
+              <small class="error" id="err-subject"></small>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project..."
+                required></textarea>
+              <small class="error" id="err-message"></small>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-success" id="form-success" role="status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Mohammed Hameed</p>
+        <p class="footer-role">Intern Software Engineer</p>
+        <div class="footer-social">
+          <a href="https://github.com/mhdhameed7/" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/mhd-hameed-2895a2342?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://www.facebook.com/share/1HkoFszpC9/" aria-label="Facebook">Facebook</a>
+          <a href="https://www.instagram.com/itzprincehameed?stkn=MXhnM2x1ZjZlOWk4NQ=="
+            aria-label="Instagram">Instagram</a>
+          <a href="mailto:mhdhameedofficial@gmail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+      <nav aria-label="Footer navigation">
+        <p class="footer-heading">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <p class="footer-contact">Thorryaya, Kurunegala, Sri Lanka<br />0753277816</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Mohammed Hameed. All rights reserved.</p>
+      <p class="footer-built">Built with HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
